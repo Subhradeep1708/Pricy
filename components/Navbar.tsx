@@ -29,11 +29,14 @@ const Navbar = () => {
                 <div className="hidden md:flex gap-6 ">
                     {nav.map(nav =>
                         <div key={nav.id}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:text-button-light ease-in-out duration-150"
                         >{nav.name}</div>
                     )}
                 </div>
-                <ThemeToggle />
+                {/* <div className="bg-white/10 rounded-full"> */}
+
+                    <ThemeToggle />
+                {/* </div> */}
                 <div className="md:hidden flex items-center">
                     <MobileSidebar />
                 </div>

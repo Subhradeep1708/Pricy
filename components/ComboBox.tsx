@@ -57,23 +57,23 @@ export function ComboBox({
     // const [value, setValue] = React.useState("")
 
     return (
-        <Popover open={open} onOpenChange={setOpen}>
-            <PopoverTrigger asChild>
+        <Popover open={open} onOpenChange={setOpen} >
+            <PopoverTrigger asChild className="">
                 <Button
                     variant="ghost"
                     role="combobox"
                     aria-expanded={open}
-                    className=" justify-between bg-transparent! font-normal w-full"
+                    className=" justify-between bg-transparent! font-normal w-full "
                 >
                     {value
                         ? options.find((options) => options === value)
-                        : `${label}`}
+                        : `Select ${label}`}
                     <ChevronsUpDownIcon className=" ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
             </PopoverTrigger>
             <PopoverContent className=" p-0">
                 <Command>
-                    <CommandInput placeholder="Search framework..." />
+                    <CommandInput placeholder={`Select ${label}`} />
                     <CommandList>
                         <CommandEmpty>No {label} found.</CommandEmpty>
                         <CommandGroup>

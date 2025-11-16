@@ -103,7 +103,9 @@
 
 
 .dark {
-  --background: oklch(0.145 0 0);
+  /* --background: oklch(0.145 0 0); */
+  --background: oklch(0.208 0.038 286.78)
+;
   --foreground: oklch(0.985 0 0);
 
   --card: oklch(0.273 0.021 249.553);
@@ -145,6 +147,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+.input-box{
+  @apply flex items-center border-[1.5px] rounded-md px-3 py-2 h-10 w-full;
 }
 
 @layer base {
