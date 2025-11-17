@@ -16,10 +16,7 @@ const MainCard = () => {
     const [depDate, setDepDate] = useState<Date | undefined>(undefined)
     const [retDate, setRetDate] = useState<Date | undefined>(undefined)
 
-    // useEffect(() => {
-    //     axios.get('https://serpapi.com/search?engine=google_flights&api_key=dcb526caaf707c95bcb09f1847fbb0eba740d43d881fc36d88fba5210a9783d0&departure_id=MAA&arrival_id=CCU&outbound_date=2025-11-15&deep_search=true&sort_by=2&type=2 ')
-    //         .then(res => console.log(res));
-    // }, []);
+    
 
     const onButtonClick = () => {
 
